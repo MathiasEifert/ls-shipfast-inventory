@@ -1,6 +1,7 @@
 package com.shipfast;
 
 import com.mongodb.MongoClient;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -15,6 +16,7 @@ import org.springframework.data.mongodb.MongoDbFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 
+@EnableRabbit
 @Configuration
 @EnableAutoConfiguration
 @ComponentScan("com.shipfast")
